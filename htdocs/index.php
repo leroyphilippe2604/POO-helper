@@ -1,6 +1,7 @@
 <?php
     require_once "form.php";
     require_once "html.php";
+    require_once "validator.php";
 ?>
 
 <!DOCTYPE html>
@@ -37,6 +38,18 @@ echo $html->meta("viewport", "width=device-width, initial-scale=1.0");
 echo $html->img('img/img.jpg', "image");
 echo $html->link("http://www.facebook.com", "facebook");
 echo $html->js('assets/js/script.js');
+?>
+
+<h2> etape 3 </h2>
+<?php
+
+$validate = new validator();
+
+echo $validate->bool("false");
+/* echo $validate->string("string"); */
+echo $validate->int(45);
+echo $validate->float(45.4);
+echo $validate->email("blabla@outlook.com");
 ?>
 
 </body>
