@@ -9,13 +9,13 @@
             }
         }
 
-/*         public function string($data){
+        public function string($data){
             if(filter_var($data, FILTER_VALIDATE_REGEXP)){
                 return;
             }else{
                 return "Ce n'est pas un string";
             }
-        } */
+        } 
 
         public function int($data){
             if(filter_var($data, FILTER_VALIDATE_INT)){
